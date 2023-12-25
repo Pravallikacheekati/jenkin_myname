@@ -1,6 +1,4 @@
 FROM ubuntu
-WORKDIR /app
-COPY shellscripting.sh .
-COPY Demo.sh .
-RUN chmod +x shellscripting.sh Demo.sh
-CMD ["/bin/bash"]
+WORKDIR /bindu
+RUN echo "hello prava" >> t1.txt 
+CMD cat t1.txt
